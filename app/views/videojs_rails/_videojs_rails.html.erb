@@ -18,8 +18,8 @@
 
 
   <!-- Download links provided for devices that can't play video in the browser. -->
-  <%= unless @options[:download] == false %>
+  <% unless @options[:download] == false %>
     <p class="vjs-no-video"><a href="<%=@options[:source]%>">download</a> </p>
-  <%= end %>
+  <% end %>
 </div>
 <!-- End VideoJS -->
