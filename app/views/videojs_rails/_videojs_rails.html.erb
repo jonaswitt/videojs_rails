@@ -16,7 +16,10 @@
     </object>
   </video>
 
+
   <!-- Download links provided for devices that can't play video in the browser. -->
-  <p class="vjs-no-video"><a href="<%=@options[:source]%>">download</a> </p>
+  <%= unless @options[:download] == false %>
+    <p class="vjs-no-video"><a href="<%=@options[:source]%>">download</a> </p>
+  <%= end %>
 </div>
 <!-- End VideoJS -->
