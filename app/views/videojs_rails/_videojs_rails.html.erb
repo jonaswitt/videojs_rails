@@ -1,7 +1,7 @@
 <!-- Begin VideoJS -->
 <div class="video-js-box">
   <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
-  <video id="<%=@options[:id]%>" class="<%= @options[:classes] %> video-js" width="<%=@options[:width]%>" height="<%=@options[:height]%>" controls="controls" preload="auto">
+  <video id="<%=@options[:id]%>" class="<%= @options[:classes] %> video-js" width="<%=@options[:width]%>" height="<%=@options[:height]%>" controls="controls" preload="auto" <% if @options[:poster] %>poster="<%= @options[:poster] %>"<% end %>>
 
     <source src="<%=@options[:source]%>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
 
